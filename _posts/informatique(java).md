@@ -1,8 +1,17 @@
+---
+layout:     post
+title:      Informatique(JAVA)
+subtitle:   ISAE-SUPAERO课程
+date:       2019-09-29
+author:     TC YU
+header-img: img/post-bg-hacker.jpg
+catalog: true
+tags:
+    - Swift
+---
+
+
 # Informatique(JAVA)
-
-
-
-
 
 ## M4 anommalies et exceptions（异常）  
 Cette séance sera consacrée à l'exploitation des **exceptions** Java. En Java, les anomalies peuvent être signalées par des exceptions qui interrompent le cours du programme. Par défaut, elles montrent **la pile d'appels** de méthodes au moment de l'arrêt du programme. Cette information est précieuse pour analyser et corriger le code. Certaines exceptions, dites **exceptions sous contrôle** doivent obligatoirement être traitées dans votre code. Elles sont soumises à la règle **Catch or Specify** qui se traduit par l'obligation d'intégrer des blocs **try {...} catch(...) {...}** ou des **clauses throws** dans votre code. Vous pouvez vous-même signaler des anomalies d'utilisation de votre code en levant vos propres exceptions avec l'instruction throw, et utiliser les exceptions pour faire de la programmation par contrats.
