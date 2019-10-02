@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Informatique(JAVA)
+title:      JAVA(M4 anommalies et exceptions 异常 )
 subtitle:   ISAE-SUPAERO课程
 date:       2019-09-29
 author:     TC YU
@@ -8,6 +8,7 @@ header-img: img/post-bg-hacker.jpg
 catalog: true
 tags:
     - JAVA
+    - Information
 ---
 
 
@@ -41,7 +42,7 @@ at m4.DisplayPositionsMain.main(DisplayPositionsMain.java:13)
 
 ```
 
-## Propager les anomalies signalées par des exceptions
+### Propager les anomalies signalées par des exceptions
 
 <font size = 4> **Objectifs:**</font>
 * Indentifier les méthodes soulmises à la règle **"Catch or Specify"**
@@ -113,7 +114,39 @@ public void bar() { // no throws clause needed here
 	* jusqu'à "Specifying the Exceptions Thrown by a Method"
 	* vous pouvez sauter "The try-with-resources Statement"
 
+### Récupérer simplement les anomalies signalées par des exceptions  
 
+<font size = 4> **Objectifs de l'activité:**</font> Récupérer les exceptions avec une forme simple de `try/catch`(Catch)  
+
+Rappel : une **exception sous contrôle (checked exception)** est une exception soumise à la règle **Catch or Specify**. Pour traiter ce type d'exception, il faut soit la récupérer (Catch), soit spécifier qu'elle se propage (Specify). Les exceptions sous contrôle sont identifiables dans l'==API Java 8== ou lors de la programmation sous Eclipse grâce à l'indication "Unhandled exception type XxxException". Cette activité se focalise sur la récupération d'exception (Catch).
+
+```java
+public void foo() { 
+  try {
+    // code fragment that may throw any type of checked exception
+    // for instance, the fragment may throw both XxxException and YyyException
+  } catch(Exception ex) {
+    // do something _useful_ here
+    // if you just want to print some message, do not catch, just specify
+  }
+}
+
+```
+
+**Remarques importantes :**
+Dans un bloc catch, récupérer une exception consiste à remettre l'application dans un état correct (en corrigeant la cause de l'exception) ou dégradé (en compensant l'erreur). En effet, l'exécution normale reprend après le catch et doit reprendre dans un état acceptable. Un simple System.out.println(...) ne suffira pas.
+On peut utiliser un `try/catch` en cas d'exception hors de contrôle (unchecked exception) comme IllegalArgumentException ou NumberFormatException.++ Il faut le faire avec parcimonie, pour ne pas alourdir le code.++ 
+La construction `try/catch` est plus complexe que ce qui est présenté ici ; il est notamment possible d'avoir **plusieurs blocs catch** pour récupérer différents types d'exception, et d'avoir un bloc `finally`.
+==L'encapsulation du code à exécuter dans un bloc `try` pénalise la performance de l'application (temps d'exécution plus long). Il faut donc limiter l'usage du `try/catch` aux cas où la récupération dans le bloc catch est utile. Dans les autres cas, il faudra propager l'exception.==
+
+在遇到Exceptions后，我们需要考虑的是异常的类型，以及需要采取的方式。Exception 这种异常分两大类运行时异常和非运行时异常(编译异常)。程序中应当尽可能去处理这些异常。
+**运行时异常**：都是RuntimeException类及其子类异常，如NullPointerException(空指针异常)、IndexOutOfBoundsException(下标越界异常)等，这些异常是不检查异常，程序中可以选择捕获处理，也可以不处理。这些异常一般是由程序逻辑错误引起的，程序应该从逻辑角度尽可能避免这类异常的发生。
+++运行时异常的特点是Java编译器不会检查它，也就是说，当程序中可能出现这类异常，即使没有用try-catch语句捕获它，也没有用throws子句声明抛出它，也会编译通过。++
+**非运行时异常 （编译异常）**：是RuntimeException以外的异常，类型上都属于Exception类及其子类。从程序语法角度讲是必须进行处理的异常，如果不处理，程序就不能编译通过。如IOException、SQLException等以及用户自定义的Exception异常，一般情况下不自定义检查异常。
+（https://blog.csdn.net/hguisu/article/details/6155636）
+处理异常的机制：抛出异常或者捕获异常。
+
+*法语：réqupérer 回收，补偿；parcimonie n.f.十分节省，精打细算；encapsulation 封装；*
 
 
 
