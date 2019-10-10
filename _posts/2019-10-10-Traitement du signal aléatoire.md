@@ -41,7 +41,7 @@ tags:
 - Identifier la fonction d'autocorrélation **ACF** (et d'intercorrélation **CCF** resp.) comme une mesure de ressemblance
 - Calculer et interpréter*[解释]* des ACF et CCF
 
-$$$(\Omega,T,P )$$$
+$(\Omega,T,P )$
 $\Omega$[样本空间] espace fondamental(ensemble des événements élémentaire) 
 $T$[事件域] mesure des evenements defins sur $\Omega$
 $P$[概率] mesure de probabilité ou probabilité aléaroire sur cet espace
@@ -89,7 +89,7 @@ Lorsaue la moyenne est identiquement nulle, on parle de processus aléatoire cen
 
 **2. Fonction d'autocorrélation**
 
-$$$R_X(t_1,t_2) = E\{X(t_1)X^*(t_2)\} = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x_1x_2^*f_x(x_1,x_2^*t_1,t_2)dx_1dx_2^*$$$
+$$R_X(t_1,t_2) = E\{X(t_1)X^*(t_2)\} = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x_1x_2^*f_x(x_1,x_2^*t_1,t_2)dx_1dx_2^*$$
 
 当时间相同时，它也表示为在相应时间的puissance
 $P_X(t) = R_X(t,t) = E\{|X(t)|^2\}$
@@ -98,17 +98,17 @@ $P_X(t) = R_X(t,t) = E\{|X(t)|^2\}$
 
 Autrement dit, la fonction d'autocovariance est définie comme la fonction d'autocorrélation du processus centré.
 
-$ C_X(t_1,t_2) = R_X(t_1,t_2) + m_X(t_1)m_X^*(t_2) $
+$C_X(t_1,t_2) = R_X(t_1,t_2) + m_X(t_1)m_X^*(t_2)$
 
-c'est ** symétrie hermitienne** pour Cx(t1,t2) et Rx(t1,t2).
+c'est **symétrie hermitienne** pour Cx(t1,t2) et Rx(t1,t2).
 
-** 4. Variance d'un processus aléatoire**
+**4. Variance d'un processus aléatoire**
 
 La variance correspond donc à la puissance du processus centré.
 
-$$$ \sigma^2_X(t) = P_X(t) - |m_X(t)|^2$$$
+$\sigma^2_X(t) = P_X(t) - |m_X(t)|^2$
 
-** 5.Coefficient de correlation **
+**5.Coefficient de correlation**
 
 La coefficient de corrélation quantifie le degré de dépendance linéaire entre X(t1) et X(t2);
 1 => lineairement dependant, 0 => décorrélé
@@ -117,11 +117,11 @@ La coefficient de corrélation quantifie le degré de dépendance linéaire entr
 
 #### Certaines choses importantes
 
-Pour un exemple Tension délivrée par un oscillateur, la fonction d'autocorrélation ne dépend que de $$$ *tau = t_1-t_2$$$; la variance du processus est indépendante du temps t.
+Pour un exemple Tension délivrée par un oscillateur, la fonction d'autocorrélation ne dépend que de $*tau = t_1-t_2$; la variance du processus est indépendante du temps t.
 
 
 
-** 6. Pour un couple de processus**
+**6. Pour un couple de processus**
 
 Fonction d'intercorrelation(CCF Cross-correlation function)
 
@@ -133,7 +133,7 @@ Fonction d'intercovariance
 Processus décorrélés
 不相关的条件是，协方差为零。此时，他们的互相关方程等于两者的期望的共轭乘积。
 
-### 1.3 Stationnarité
+###1.3 Stationnarité
 
 ** 1.Processus stationnaire au sens strict**
 (SSS Strict sense stationary random process)严平稳过程
@@ -143,16 +143,16 @@ Un processus aléatoire X est stationnaire au sens strict si sa fonction de rép
 * Ordre 2: la fonction d'autocorrélation d'un processus stationnaire au sens strict dépend uniquement de la différence de temps $$$ \tau = t_1 - t_2 $$$. Dans ce cas on peut redéfinir la fonction d'autocorrélation comme une fonction d'un seul paramètre.
 # why?
 
-** 2. Process stationnaire au sens large ou au second ordre**
+**2. Process stationnaire au sens large ou au second ordre**
 (WSS Wide sense stationatry process)宽平稳过程
 Un processus stochastique est tationnaire au sens large ou au second ordre si sa moyenne est constante et si sa fonction d'autocorrélation est indépendante de l'origine des temps.
 
-** 3. Processus conjointement stationnaires au sens large**
+**3. Processus conjointement stationnaires au sens large**
 
 ### 1.4 Ergodicité 遍历
 Dans tous les cas, la notion d'ergodicité n'a de sens que si l'on suppose le processus au moins stationnaire au sens large.
 
-** 1. Moyenne et fonction d'auto-corrélation temporelle**
+**1. Moyenne et fonction d'auto-corrélation temporelle**
 
 
 
