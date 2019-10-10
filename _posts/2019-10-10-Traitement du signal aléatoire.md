@@ -133,9 +133,9 @@ Fonction d'intercovariance
 Processus décorrélés
 不相关的条件是，协方差为零。此时，他们的互相关方程等于两者的期望的共轭乘积。
 
-###1.3 Stationnarité
+### 1.3 Stationnarité
 
-** 1.Processus stationnaire au sens strict**
+**1.Processus stationnaire au sens strict**
 (SSS Strict sense stationary random process)严平稳过程
 Un processus aléatoire X est stationnaire au sens strict si sa fonction de répartition à l'ordre n est égale à celle du signal aléatoire translaté X(t+T) pour tout T et pour tout $$$ n \geq 1$$$.
 
