@@ -46,7 +46,7 @@ $\Omega$[样本空间] espace fondamental(ensemble des événements élémentair
 $T$[事件域] mesure des evenements defins sur $\Omega$
 $P$[概率] mesure de probabilité ou probabilité aléaroire sur cet espace
 
-![avatar](E:\Github\lialittis.github.io\img\signal aleatoire1.png)
+![](https://raw.githubusercontent.com/lialittis/lialittis.github.io/master/img/signal%20aleatoire1.png)
 
 ```
 graph TD
