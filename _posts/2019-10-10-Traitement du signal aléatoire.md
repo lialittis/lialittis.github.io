@@ -54,6 +54,7 @@ graph TD
 	B --> C[概率空间]
 	C --> D[随机变量]
 ```
+
 条件概率复习：乘法公式；全概率公式；Bayes公式；
 独立：相互独立=>两两独立；
 随机变量：将样本空间种各个样本点对应到实数轴上，产生随机变量（分析方式：分布函数或分布律，概率密度，数学特征函数和各阶矩阵）；
@@ -87,7 +88,8 @@ Lorsaue la moyenne est identiquement nulle, on parle de processus aléatoire cen
 中心矩：方差，协方差
 
 **2. Fonction d'autocorrélation**
-$R_X(t_1,t_2) = E\{X(t_1)X^*(t_2)\} = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x_1x_2^*f_x(x_1,x_2^*t_1,t_2)dx_1dx_2^*$
+
+$$$R_X(t_1,t_2) = E\{X(t_1)X^*(t_2)\} = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x_1x_2^*f_x(x_1,x_2^*t_1,t_2)dx_1dx_2^*$$$
 
 当时间相同时，它也表示为在相应时间的puissance
 $P_X(t) = R_X(t,t) = E\{|X(t)|^2\}$
@@ -106,7 +108,7 @@ La variance correspond donc à la puissance du processus centré.
 
 $$$ \sigma^2_X(t) = P_X(t) - |m_X(t)|^2$$$
 
-** 5.Coefficient de correlation**
+** 5.Coefficient de correlation **
 
 La coefficient de corrélation quantifie le degré de dépendance linéaire entre X(t1) et X(t2);
 1 => lineairement dependant, 0 => décorrélé
