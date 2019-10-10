@@ -89,7 +89,7 @@ Lorsaue la moyenne est identiquement nulle, on parle de processus aléatoire cen
 
 **2. Fonction d'autocorrélation**
 
-$$R_X(t_1,t_2) = E\{X(t_1)X^*(t_2)\} = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x_1x_2^*f_x(x_1,x_2^*t_1,t_2)dx_1dx_2^*$$
+![](http://latex.codecogs.com/gif.latex?\\R_X(t_1,t_2) = E\{X(t_1)X^*(t_2)\} = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x_1x_2^*f_x(x_1,x_2^*t_1,t_2)dx_1dx_2^*)
 
 当时间相同时，它也表示为在相应时间的puissance
 $P_X(t) = R_X(t,t) = E\{|X(t)|^2\}$
