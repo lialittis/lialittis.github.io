@@ -6,6 +6,8 @@ date:       2019-10-10
 author:     TC YU
 header-img: img/signal_et_system_page.jpg
 catalog: true
+export_on_save:
+ html: true
 tags:
     - Signal aléatoire
     - 随机信号
