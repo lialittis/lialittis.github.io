@@ -100,7 +100,7 @@ Lorsaue la moyenne est identiquement nulle, on parle de processus aléatoire cen
 
 **2. Fonction d'autocorrélation**
 
-$$R_X(t_1,t_2) = E\{X(t_1)X^*(t_2)\} = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x_1x_2^*f_x(x_1,x_2^*t_1,t_2)dx_1dx_2^*)$$
+$$R_X(t_1,t_2) = E\{X(t_1)X^*(t_2)\} = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x_1x_2^*f_x(x_1,x_2^*t_1,t_2)dx_1dx_2^*$$
 
 当时间相同时，它也表示为在相应时间的puissance
 $P_X(t) = R_X(t,t) = E\{|X(t)|^2\}$
@@ -144,9 +144,9 @@ Fonction d'intercovariance
 Processus décorrélés
 不相关的条件是，协方差为零。此时，他们的互相关方程等于两者的期望的共轭乘积。
 
-### 1.3 Stationnarité
+###1.3 Stationnarité
 
-**1.Processus stationnaire au sens strict**
+** 1.Processus stationnaire au sens strict**
 (SSS Strict sense stationary random process)严平稳过程
 Un processus aléatoire X est stationnaire au sens strict si sa fonction de répartition à l'ordre n est égale à celle du signal aléatoire translaté X(t+T) pour tout T et pour tout $$$ n \geq 1$$$.
 
@@ -196,7 +196,39 @@ Dans tous les cas, la notion d'ergodicité n'a de sens que si l'on suppose le pr
 8. Comment mesurer en pratique la moyenne statistique d'un processus aléatoire ergodique par rapport à sa moyenne ?
 
 
+## 2.Processus aléatoires stqtionnaires au sens large
 
+### 2.1 Propriétés de la fonction de corrélation
+
+WSS: 
+1. symétrie hermitienne
+2. si de plus le processus est réel, sa fonction d'autocorrélation est une fonction paire.
+3. la puissance du processus est indépendante du paramètre t.
+4. $\forall\tau,|R_X(\tau)|\leq R_X(-\tau)|$
+5. $R_X$est une foncion semi-définie positive.
+
+**Pour un couple de processus**
+
+
+
+### 2.2 Densité spectrale de puissance(PSD Power spectral density)
+
+$S_X(f) = F{R_X}(f) = \int_{-\infty}^{+\infty}R_X(\tau)e^{-i2\pi f\tau}d\tau$
+
+**Propriétés:PSD**
+1. valeurs dans R
+2. $S_X\geq 0$
+3. Si X est un processus réel, $S_X$ est une fonction paire.
+4. 如果期望不等于0，那么Sx在0处有一个狄拉克函数，poids为期望的平方
+5. $P_X = R_X(0) = \int_{-\infty}^{+\infty}S_X(f)df$
+
+**Densité inter-spectrale de puissance**
+
+
+### 2.3 Processus aléatoires aprés transformation
+
+**Système sans mémoire**
+Un système est dit sans mémoire si, pour tout t, la variable aléatoire un sortie Y(t) ne dépend que de la variable aléatoire X(t) et non des variables X(t')
 
 
 
