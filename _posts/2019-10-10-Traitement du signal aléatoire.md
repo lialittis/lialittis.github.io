@@ -98,7 +98,7 @@ Lorsaue la moyenne est identiquement nulle, on parle de processus aléatoire cen
 原点矩：数学期望，均方值，互相关
 中心矩：方差，协方差
 
-**2. Fonction d'autocorrélation**
+**2. Fonction d'autocorrélation** [自相关系数]
 
 $$R_X(t_1,t_2) = E\{X(t_1)X^*(t_2)\} = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x_1x_2^*f_x(x_1,x_2^*t_1,t_2)dx_1dx_2^*$$
 
@@ -113,7 +113,7 @@ $C_X(t_1,t_2) = R_X(t_1,t_2) + m_X(t_1)m_X^*(t_2)$
 
 c'est **symétrie hermitienne** pour Cx(t1,t2) et Rx(t1,t2).
 
-**4. Variance d'un processus aléatoire**
+**4. Variance d'un processus aléatoire** [方差]
 
 La variance correspond donc à la puissance du processus centré.
 
@@ -196,16 +196,45 @@ Dans tous les cas, la notion d'ergodicité n'a de sens que si l'on suppose le pr
 8. Comment mesurer en pratique la moyenne statistique d'un processus aléatoire ergodique par rapport à sa moyenne ?
 
 
-## 2.Processus aléatoires stqtionnaires au sens large
+
+## 补充：平稳过程
+所谓平稳过程粗略地说就是指它是统计特性不随时间推移而变化的随机过程。  
+严平稳随机过程：如果随机过程的任意n维随机分布不随时间起点的不同而变化，即取样点在时间轴上平移了任意$\Delta t$之后，其n维概率密度保持不变，则称该随机过程为严平稳或者狭义平稳过程。
+
+要判定某个具体随机信号严平稳是很困难的，它要确定过程的任意有限维分布。因此要引入宽平稳过程。  
+* 在很多实际问题中，往往并不需要随机过程在所有时间都平稳，只要在观测的有限时间内过程平稳。  
+* 因此，在工程实际的应用中，通常只在相关理论的范围内考察过程的平稳性问题。所谓相关理论是指仅限于研究与随机过程的一、二阶矩有关的理论。主要研究随机过程的数学期望，相关函数及功率谱密度等。  如果随机过程对于每个时间点的均值和方差都存在，则称 为**二阶矩过程**。
+
+
+## 2.Processus aléatoires stationnaires au sens large
+
+宽平稳过程的条件：若随机过程的数学期望为常数，其相关函数至于时间间隔有关，且均方值有限，即满足三个条件：
+1. $E{X(t)} = m_X$  
+2. $R_X(t_1，t_2) = R_X(\tau)$  
+3. $E{X^2(t)} < \infty$
+则称X(t)过程为宽平稳过程，或者广义平稳过程。
+ 
+=>
+严平稳过程若均方值有界，则为宽平稳，反之不成立；
+高斯过程中，严平稳和宽平稳等价。
+#### **？**什么是高斯过程
 
 ### 2.1 Propriétés de la fonction de corrélation
 
 WSS: 
-1. symétrie hermitienne
+1. symétrie hermitienne$\forall\tau,|R_X(\tau)| = R_X^*(-\tau)|$
 2. si de plus le processus est réel, sa fonction d'autocorrélation est une fonction paire.
 3. la puissance du processus est indépendante du paramètre t.
-4. $\forall\tau,|R_X(\tau)|\leq R_X(-\tau)|$
+4. $\forall\tau,|R_X(\tau)|\leq R_X(0)|$
 5. $R_X$est une foncion semi-définie positive.
+
+平稳过程不一定是周期性的。  
+对于非周期性的，$R_X(\infty) = m_X^*2$  
+
+平稳过程的自相关系数：
+$r_X(\tau) = \frac{C_X(\tau)}{\sigma^2_X} = \frac{R_X(\tau) - m_X}{\sigma^2_X}$
+
+随着$\tau$的增大，相关系数下降，当$\tau$增大到一定程度的时候，我们可以认为自相关系数下降到零，即$X(t)$和$X(t+\tau)$不相关。当我们看到$r_X(\tau_0) = 0.05$时，定义这个对应的时间为相关时间。
 
 **Pour un couple de processus**
 
