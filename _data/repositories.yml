@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - lialittis
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - lialittis/Cryptology-Practice
+  - lialittis/Cyper-Physic-Systems
+  - Optimizator-PIE10-Thales-SUPAERO/solvers
+  - lialittis/OCaml
+  - lialittis/system_programming_hub
+  - com-480-data-visualization/com-480-project-story-tellers
