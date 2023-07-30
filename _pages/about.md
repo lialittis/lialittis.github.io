@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>More About Me</a>. Contact: firstname.lastname[at]tum.de
+subtitle: <a href='#'>More About Me</a>. Contact firstname.lastname[at]tum.de
 
 profile:
   align: right
