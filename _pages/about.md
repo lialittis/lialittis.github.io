@@ -23,7 +23,7 @@ I am a first-year Ph.D. student at [Chair of Distributed Systems & Operating Sys
 
 I obtained my first M.Sc. from École Polytechnique, IP-Paris, in Cyber Physical Systems, and my second M.Sc.(diplôme d'ingénieur) from Institut Supérieur de l'Aéronautique et de l'Espace, in direction of Math and Computer Science. My first professional research project was at [Nomadic Labs](https://www.nomadic-labs.com/) in 2021 on Smart Contract of Tezos Blockchain, I was fortunate to work with [Dr.Yann Régis-Gianas](https://yrg.gitlab.io/homepage/) and Dr.Richard Bonichon. Sooner, I focused more on Hardware Security and Machine Learning Security, then I finished my Master Thesis with [Dr.Laurent Gomez](https://scholar.google.de/citations?user=QJv4B9EAAAAJ&hl=fr) at SAP Security Research Team and we eventually published a scientific paper with the content of my thesis.
 
-My research interests are **System/Hardware Security**, **Trustworthy Systems** and **Heterogenous Computing**. I am very open to Open Source Projects and any interesting projects.
+My research interests are **System/Hardware Security**, **Trustworthy Systems** and **Heterogenous Computing**. I am highly receptive to engaging in Open Source Projects as well as any other compelling initiatives.
 
 [comment]: <> Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
