@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      CS423 Distributed Information Systems
+subtitle:   École Polytechnique Fédérale de Lausanne
+date:       2020-08-30
+author:     TC YU
+header-img: assets/img/Crypto_title.png
+catalog: true
+tags:
+  - machine learning
+categories: Courses
+---
+
 $$
 \def\abs#1{\left|\,#1\,\right|}
 $$
