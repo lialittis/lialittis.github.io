@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How to Write A CORRECT LLVM Pass As A Plugin
-date: 2023-08-06 00:30:00
+title: Performance Benefits From Underutilized CPU
+date: 2023-08-18 00:30:00
 description: 
-redirect: https://tianchiyu.bearblog.dev/how-to-write-a-correct-llvm-pass-as-a-plugin/
+redirect: https://tianchiyu.bearblog.dev/performance-benefits-from-underutilized-cpu/
 tags:
-    - compiler
-    - llvm
+    - performance
+    - security
 ---
