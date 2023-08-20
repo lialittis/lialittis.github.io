@@ -26,7 +26,7 @@
     {
       "name": "",
       "position": "",
-      "url": "https://example.com",
+      "url": "",
       "startDate": "",
       "endDate": "",
       "summary": "",
@@ -38,7 +38,7 @@
   "volunteer": [],
   "education": [
     {
-      "institution": "",
+      "institution": "Technische Universität München, Munich, Germany",
       "url": "",
       "area": "",
       "studyType": "",
