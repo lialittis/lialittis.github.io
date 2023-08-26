@@ -3,6 +3,7 @@ layout: page
 title: Smart Contract Optimization
 description: Optimal Synthesis of Michelson Bytecode
 img: assets/img/projects/logo-nl.png
+pdf: smart_contract_project.pdf
 importance: 1
 category: work
 related_publications:

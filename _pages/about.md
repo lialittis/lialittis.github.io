@@ -10,8 +10,10 @@ profile:
   image_circular: false # crops the image to make it circular
   address: >
     <!-- <p>PhD Student</p>
-    <p>Technische Universität München</p> -->
-    <p>Munich, Germany</p>
+    <p>Technische Universität München</p> 
+    <p>Munich, Germany</p> -->
+  slogan: 
+    <p>Keep Hungry, Keep Foolish</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
