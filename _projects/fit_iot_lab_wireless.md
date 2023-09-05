@@ -1,9 +1,9 @@
 ---
 layout: page
-title: IOT Project - Medicine-Guardian
+title: IOT Project of Medicine-Guardian
 description: FIT/IOT Lab Wireless
 img: assets/img/projects/IOT/iot_wireless.png
-importance: 2
+importance: 3
 pdf: iot_wireless_project.pdf
 category: work
 giscus_comments: true

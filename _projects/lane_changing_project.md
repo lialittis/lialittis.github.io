@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Simulation - ODE Dynamical System
-description: Lane changing operations of autonomous vehicles
+title: ODE Dynamical System
+description: Lane changing operations of autonomous vehicles(with Simulink Simulation)
 img: assets/img/projects/ODE/supervisory_control_leader.jpg
 pdf: lane_change_project.pdf
-importance: 1
+importance: 2
 category: work
 related_publications:
 ---
