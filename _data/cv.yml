@@ -8,16 +8,16 @@
     - name: Languages
       value: English, French, Chinese
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD Student
-      institution: Technische Universität München, Munich, Germany
-      year: 2023
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+# - title: Education
+#   type: time_table
+#   contents:
+#     - title: PhD Student
+#       institution: Technische Universität München, Munich, Germany
+#       year: 2023
+#       description:
+#         - Description 1.
+#         - Description 2.
+#         - title: Description 3.
+#           contents:
+#             - Sub-description 1.
+#             - Sub-description 2.
